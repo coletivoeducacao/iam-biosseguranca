@@ -1,0 +1,10 @@
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="27.737" height="27.737" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 27.737 27.737">
+  <defs>
+    <symbol id="stripe" viewBox="0 0 13.4783 14.2587">
+      <polygon points="13.4783 14.2587 0 6.477 0 0 13.4783 7.7817 13.4783 14.2587" style="fill: #fbb03b; stroke-width: 0px;"/>
+    </symbol>
+  </defs>
+  <use width="13.4783" height="14.2587" transform="translate(14.2587 13.4783)" xlink:href="#stripe"/>
+  <use width="13.4783" height="14.2587" transform="translate(14.2587) rotate(90)" xlink:href="#stripe"/>
+</svg>
