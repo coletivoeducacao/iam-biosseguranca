@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="91.2775" height="123.9281" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91.2775 123.9281">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g style="opacity: .15;">
+        <image width="92" height="3" transform="translate(-.5345 121.3027)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAADCAYAAAAeN2h6AAAACXBIWXMAAAsSAAALEgHS3X78AAAAaElEQVQ4jWNkwA/+MzAw3GBgYGBnYGBgQ6PZCegdKLCLgYGBmYGBgQmKsbGpLQbDBAEjAwPDbAYGhngGBobfePARPPoZ0diUilFq1mMGzMBBpvHJ0VwtzJHkAiEkNiMDA8NbCs0b9gAAyAYOAnVgHpUAAAAASUVORK5CYII="/>
+      </g>
+      <path d="M0,1.0755v121.7031c30.4091-1.4341,60.8685-1.4341,91.2773,0,0-40.5677,0-81.1354,0-121.7031C60.8685-.3585,30.4091-.3585,0,1.0755ZM82.8482,83.5595c-24.7971-.9532-49.6218-.9532-74.4189,0V9.1474c24.7972-.9531,49.6219-.953,74.4189,0v74.412Z" style="fill: #fcee21; stroke-width: 0px;"/>
+    </g>
+  </g>
+</svg>
