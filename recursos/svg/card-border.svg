@@ -1,0 +1,61 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="98" height="98" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 98 98" vector-effect="non-scaling-stroke">
+  <defs>
+    <symbol id="spike" viewBox="0 0 13.6934 15.5264">
+      <polygon points="0 7.763 7.9631 15.5264 13.6931 15.5264 5.7305 7.763 13.6934 .0003 13.6931 0 7.9634 0 0 7.763" style="stroke-width: 0px;"/>
+    </symbol>
+    <symbol id="stripe" viewBox="0 0 13.4783 14.2587">
+      <polygon points="13.4783 14.2587 0 6.477 0 0 13.4783 7.7817 13.4783 14.2587" style="stroke-width: 0px;"/>
+    </symbol>
+    <symbol id="wave" viewBox="0 0 16 98">
+      <path d="M8,94c2-3.808,4-7.616,4-15,0-14.768-8-15.232-8-30s8-15.232,8-30c0-7.384-2-11.192-4-15" style="fill: none; stroke-linecap: round; stroke-width: 8px;"/>
+    </symbol>
+  </defs>
+  <g>
+    <use id="wave-v-1" width="16" height="98" transform="translate(82)" xlink:href="#wave"/>
+    <use id="wave-v-2" width="16" height="98" transform="translate(82)" xlink:href="#wave"/>
+    <use id="wave-v-3" width="16" height="98" transform="translate(82)" xlink:href="#wave"/>
+    <use id="wave-h-1" width="16" height="98" transform="translate(98) rotate(90)" xlink:href="#wave"/>
+    <use id="wave-h-2" width="16" height="98" transform="translate(98) rotate(90)" xlink:href="#wave"/>
+    <use id="wave-h-3" width="16" height="98" transform="translate(98) rotate(90)" xlink:href="#wave"/>
+  </g>
+  <g>
+    <use id="spike-v-1" width="13.6934" height="15.5264" transform="translate(84.5217) scale(.9843)" xlink:href="#spike"/>
+    <use id="spike-v-2" width="13.6934" height="15.5264" transform="translate(84.5217) scale(.9843)" xlink:href="#spike"/>
+    <use id="spike-v-3" width="13.6934" height="15.5264" transform="translate(84.5217) scale(.9843)" xlink:href="#spike"/>
+    <use id="spike-h-1" width="13.6934" height="15.5264" transform="translate(98) rotate(90) scale(1.0285 .9838)" xlink:href="#spike"/>
+    <use id="spike-h-2" width="13.6934" height="15.5264" transform="translate(98) rotate(90) scale(1.0285 .9838)" xlink:href="#spike"/>
+    <use id="spike-h-3" width="13.6934" height="15.5264" transform="translate(98) rotate(90) scale(1.0285 .9838)" xlink:href="#spike"/>
+  </g>
+  <g>
+    <use id="stripe-v-1" width="13.4783" height="14.2587" transform="translate(84.5218 13.7119)" xlink:href="#stripe"/>
+    <use id="stripe-v-2" width="13.4783" height="14.2587" transform="translate(84.5218 13.7119)" xlink:href="#stripe"/>
+    <use id="stripe-v-3" width="13.4783" height="14.2587" transform="translate(84.5218 13.7119)" xlink:href="#stripe"/>
+    <use id="stripe-h-1" width="13.4783" height="14.2587" transform="translate(84.1739) rotate(90)" xlink:href="#stripe"/>
+    <use id="stripe-h-2" width="13.4783" height="14.2587" transform="translate(84.1739) rotate(90)" xlink:href="#stripe"/>
+    <use id="stripe-h-3" width="13.4783" height="14.2587" transform="translate(84.1739) rotate(90)" xlink:href="#stripe"/>
+  </g>
+  <style>/* <![CDATA[ */
+    use {
+        display: none;
+
+        &:target {
+            display: inline;
+        }
+        &[id$="-1"] {
+            fill: #007290;
+            stroke: #007290;
+        }
+        
+        &[id$="-2"] {
+            fill: orange;
+            stroke: orange;
+        }
+        
+        &[id$="-3"] {
+            fill: orangered;
+            stroke: orangered;
+        }
+    }
+
+    /* ]]> */</style>
+</svg>
