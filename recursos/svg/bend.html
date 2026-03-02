@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Folha</title>
+        <style>
+            body {
+                margin: 1rem;
+                margin-top: 3rem;
+                background-color: #eef6ff;
+                font-family: sans-serif;
+                line-height: 1.5;
+                font-size: 20px;
+            }
+
+            .biosseg-card {
+                --bend-size: 30px;
+                --bend-angle: 30deg;
+                position: relative;
+                max-width: 900px;
+                margin-inline: auto;
+                filter: drop-shadow(0 0 16px #00000026);
+                rotate: 0.5deg;
+                font-family: cursive;
+                line-height: 2.6;
+                resize: both;
+                overflow: hidden;
+
+                .biosseg-card__title {
+                    position: absolute;
+                    top: -0.5lh;
+                    left: 0;
+                    padding: 0.25rem 2rem;
+                    line-height: 1;
+                    font-size: clamp(1rem, 12vw, 5rem);
+                    rotate: -2deg;
+                    z-index: 1;
+                    opacity: 0.95;
+                    background-color: #e3e2b5;
+                    background-blend-mode: overlay;
+                    background-image: url(../imagens/fita.jpg);
+                    background-repeat: repeat-x;
+                    background-size: auto 100%;
+                    mask-image: url(fita.svg), url(fita-e.svg), url(fita-d.svg);
+                    mask-repeat: repeat-x, no-repeat, no-repeat;
+                    mask-position: center, left, right;
+                    mask-size: auto 100%;
+                    mask-composite: subtract, add, add;
+                    display: block;
+                    resize: both;
+                    overflow: hidden;
+                }
+
+                .biosseg-card__body {
+                    mask-image: linear-gradient(calc(var(--bend-angle) + 180deg), transparent calc(var(--bend-size) - 2rem), black 0);
+                    padding: 3em 2em 2em 3.25em;
+                    height: 100%;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        z-index: -1;
+                        background-color: white;
+                        border-radius: 0.5rem;
+                        mask-repeat: repeat-Y;
+                        mask-image: linear-gradient(black), url(borda-t.svg), url(borda-d.svg), url(rasgo.svg), url(borda-e.svg), url(caderno.svg), linear-gradient(calc(var(--bend-angle) + 180deg), black var(--bend-size), transparent 0);
+                        mask-composite: subtract, add, add, add, add, add, add;
+                        mask-repeat:
+                            no-repeat,
+                            repeat-x,
+                            repeat-y,
+                            repeat-x,
+                            repeat-y,
+                            no-repeat space;
+                        mask-size: auto, auto, auto, 100%, auto, auto;
+                        mask-position:
+                            center,
+                            top,
+                            top right,
+                            bottom,
+                            top left,
+                            top left;
+                        background-image: url(../imagens/papel.jpeg), linear-gradient(to right, transparent calc(3em - 2px), #ffbaba calc(3em - 2px), #ffbaba 3em, transparent 3em), repeating-linear-gradient(transparent, transparent calc(1lh - 2px), #a3c2e6 calc(1lh - 2px), #a3c2e6 1lh);
+                        background-position:
+                            top left,
+                            top left,
+                            0 calc(3em - calc(1lh - 1em) + calc((1lh - 1em) / 2));
+                        background-repeat: repeat, repeat, no-repeat;
+                        background-blend-mode: multiply;
+                        background-size: 100% auto;
+                    }
+                }
+
+                & .bend {
+                    pointer-events: none;
+                    position: absolute;
+                    inset: 0;
+                    mask-image: linear-gradient(calc(var(--bend-angle) + 180deg), transparent var(--bend-size), black 0);
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        inset: 0px 0px auto auto;
+                        width: calc(var(--bend-size) / cos(calc(90deg - var(--bend-angle))));
+                        height: calc(var(--bend-size) / sin(calc(90deg - var(--bend-angle))));
+                        background-color: #fef5e9;
+                        background-image: linear-gradient(var(--bend-angle), grey, transparent calc(var(--bend-size) / sin(calc(90deg - var(--bend-angle)))));
+                        background-blend-mode: multiply;
+                        transform: scaleY(-1) rotate(calc(var(--bend-angle) * -2));
+                        transform-origin: bottom right;
+                        filter: drop-shadow(2px 0px 6px #00000066);
+                        border-top-right-radius: 0.5rem;
+                        pointer-events: all;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="biosseg-card">
+            <span class="biosseg-card__title">Saiba mais</span>
+            <div class="biosseg-card__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vel laboriosam hic assumenda dignissimos dicta ipsam sit atque, facilis corporis at quidem itaque dolorem. Vel tempora placeat vero temporibus quas non optio aut. Quam modi facere exercitationem ea omnis laudantium incidunt dolorem earum maxime et recusandae ullam aliquam quidem perferendis libero, sapiente inventore placeat aut architecto repellendus! Corrupti consectetur magnam veritatis ullam aut eum quas perspiciatis, tenetur hic cum officia ea aliquid nam ab eaque facere nostrum, dicta maxime eos repellat, autem id. Nihil laborum vel iste fugiat corrupti. Doloribus nemo dolor, quasi ad magni hic ex sequi nostrum reprehenderit.</div>
+            <div class="bend" role="presentation" aria-hidden="true"></div>
+        </section>
+    </body>
+</html>
